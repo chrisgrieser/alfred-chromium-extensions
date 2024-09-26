@@ -4,14 +4,22 @@
 ![Download count](https://img.shields.io/github/downloads/chrisgrieser/alfred-chromium-extensions/total?label=Total%20Downloads&style=plastic)
 ![Version number](https://img.shields.io/github/v/release/chrisgrieser/alfred-chromium-extensions?label=Latest%20Release&style=plastic)
 
-Open extension settings or internal pages of Chrome (or any other Chromium-based browser)
+Open extension settings or internal pages of Chrome, Brave, or (or any other
+Chromium-based browser\*).
 
-- [ ] Showcase image to be inserted here.
+<img alt="Showcase" width=70% src="https://github.com/user-attachments/assets/bb4f10fc-f485-4aab-8352-c1af6950a1bc">
 
 ## Usage
-- ((Do this)) via the keyword `xxx`.
-- Press the [hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/)
-  to ((do this))
+Search for installed browser extensions and internal pages via the keyword `ch`:
+- <kbd>⏎</kbd> Open page, or the respective extension settings.
+- <kbd>⌘⏎</kbd> Open the extension at the Chrome Web Store.
+- <kbd>⌥⏎</kbd> Copy the Chrome Web Store URL of the extension.
+- <kbd>⇧⏎</kbd> Open the local file path of the extension.
+
+## Browser support
+Currently, only Chrome and Brave are supported. Adding support for more
+browsers is easy, as long as they are Chromium-based. Making a few additions to
+this JSON file is all that is needed.
 
 ## Installation
 [➡️ Download the latest release.](https://github.com/chrisgrieser/alfred-chromium-extensions/releases/latest)
