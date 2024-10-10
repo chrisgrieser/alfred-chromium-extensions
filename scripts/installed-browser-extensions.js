@@ -18,6 +18,8 @@ function readFile(path) {
 	return ObjC.unwrap(str);
 }
 
+const fileExists = (/** @type {string} */ filePath) => Application("Finder").exists(Path(filePath));
+
 //──────────────────────────────────────────────────────────────────────────────
 
 /** @type {Record<string, string>} */
@@ -36,6 +38,19 @@ function run() {
 	const browserVars = JSON.parse(readFile("./scripts/browser-vars.json"));
 	const home = app.pathTo("home folder");
 	const extensionPath = browserVars.extensionPath[browser].replace(/^~/, home);
+
+	// GUARD browser not installed
+	if (!fileExists(extensionPath)) {
+		return JSON.stringify({
+			items: [
+				{
+					title: browser + " not installed.",
+					subtitle: "⏎: Open workflow configuration to select a different browser.",
+					arg: `alfredpreferences://navigateto/workflows>workflow>${$.getenv("alfred_workflow_uid")}>userconfig>browser`,
+				},
+			],
+		});
+	}
 
 	// SETTINGS
 	const settings = JSON.parse(readFile("./scripts/all-chromium-browser-settings.json"));
