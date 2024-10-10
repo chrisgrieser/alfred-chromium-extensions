@@ -1,11 +1,11 @@
 <!-- LTeX: enabled=false -->
-# Alfred local chromium extensions and internal pages
+# Alfred Chromium Extensions and Pages
 <!-- LTeX: enabled=true -->
 ![Download count](https://img.shields.io/github/downloads/chrisgrieser/alfred-chromium-extensions/total?label=Total%20Downloads&style=plastic)
 ![Version number](https://img.shields.io/github/v/release/chrisgrieser/alfred-chromium-extensions?label=Latest%20Release&style=plastic)
 
 Open extension settings or internal pages of Chrome, Brave, or any other
-Chromium-based browser.\*
+Chromium-based browser.
 
 <img alt="Showcase" width=70% src="https://github.com/user-attachments/assets/bb4f10fc-f485-4aab-8352-c1af6950a1bc">
 
@@ -16,18 +16,17 @@ Search for installed browser extensions and internal pages via the keyword `ch`:
 - <kbd>⌥⏎</kbd> Copy the Chrome Web Store URL of the extension.
 - <kbd>⇧⏎</kbd> Open the local file path of the extension.
 
-## *Browser support
+## Browser support
 Currently, only Chrome and Brave are supported. Adding support for more browsers
 is easy, as long as they are Chromium-based. Making a few additions to this
 [JSON
 file](https://github.com/chrisgrieser/alfred-chromium-extensions/blob/main/scripts/browser-vars.json)
-is all that is needed, and mostly self-explanatory.
+is all that is needed, and mostly self-explanatory, PRs are welcome.
 
 ## Installation
 [➡️ Download the latest release.](https://github.com/chrisgrieser/alfred-chromium-extensions/releases/latest)
 
-When admitted to the Alfred Gallery, the workflow auto-updates via Alfred's
-workflow-update mechanism.
+The workflow auto-updates via Alfred's workflow-update mechanism.
 
 <!-- vale Google.FirstPerson = NO -->
 ## About the developer

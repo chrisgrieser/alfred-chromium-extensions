@@ -68,11 +68,11 @@
 	<key>createdby</key>
 	<string>Chris Grieser</string>
 	<key>description</key>
-	<string>Open extension settings or internal pages of Chrome (or any other Chromium-based browser)</string>
+	<string>Open extension settings or internal pages of Chrome, Brave, or any other Chromium-based browser.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Chromium extensions &amp; internal pages</string>
+	<string>Chromium Extensions &amp; Pages</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -196,10 +196,12 @@ Search for installed browser extensions and internal pages via the keyword `ch`:
 - &lt;kbd&gt;⌥⏎&lt;/kbd&gt; Copy the Chrome Web Store URL of the extension.
 - &lt;kbd&gt;⇧⏎&lt;/kbd&gt; Open the local file path of the extension.
 
-## Browser support
-Currently, only Chrome and Brave are supported. Adding support for more
-browsers is easy, as long as they are Chromium-based. Making a few additions to
-this JSON file is all that is needed.
+## *Browser support
+Currently, only Chrome and Brave are supported. Adding support for more browsers
+is easy, as long as they are Chromium-based. Making a few additions to this
+[JSON
+file](https://github.com/chrisgrieser/alfred-chromium-extensions/blob/main/scripts/browser-vars.json)
+is all that is needed, and mostly self-explanatory, PRs are welcome.
 
 ---
 
