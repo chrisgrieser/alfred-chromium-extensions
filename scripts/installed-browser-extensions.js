@@ -28,11 +28,14 @@ const specialAnchors = {
 	Violentmonkey: "#scripts",
 };
 
+//──────────────────────────────────────────────────────────────────────────────
+
 // biome-ignore lint/correctness/noUnusedVariables: Alfred run
 function run() {
 	const browser = $.getenv("browser");
 	const browserVars = JSON.parse(readFile("./scripts/browser-vars.json"));
-	const extensionPath = browserVars.extensionPath[browser].replace(/^~/, app.pathTo("home folder"));
+	const home = app.pathTo("home folder");
+	const extensionPath = browserVars.extensionPath[browser].replace(/^~/, home);
 
 	// SETTINGS
 	const settings = JSON.parse(readFile("./scripts/all-chromium-browser-settings.json"));

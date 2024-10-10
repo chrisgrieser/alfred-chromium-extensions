@@ -196,7 +196,7 @@ Search for installed browser extensions and internal pages via the keyword `ch`:
 - &lt;kbd&gt;⌥⏎&lt;/kbd&gt; Copy the Chrome Web Store URL of the extension.
 - &lt;kbd&gt;⇧⏎&lt;/kbd&gt; Open the local file path of the extension.
 
-## *Browser support
+## Browser support
 Currently, only Chrome and Brave are supported. Adding support for more browsers
 is easy, as long as they are Chromium-based. Making a few additions to this
 [JSON
