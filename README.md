@@ -4,7 +4,7 @@
 ![Download count](https://img.shields.io/github/downloads/chrisgrieser/alfred-chromium-extensions/total?label=Total%20Downloads&style=plastic)
 ![Version number](https://img.shields.io/github/v/release/chrisgrieser/alfred-chromium-extensions?label=Latest%20Release&style=plastic)
 
-Open extension settings or internal pages of Chrome, Brave, or any other
+Open extension settings or internal pages of Chrome, Brave, Arc, or any other
 Chromium-based browser.
 
 <img alt="Showcase" width=70% src="https://github.com/user-attachments/assets/bb4f10fc-f485-4aab-8352-c1af6950a1bc">
