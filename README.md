@@ -1,6 +1,4 @@
-<!-- LTeX: enabled=false -->
 # Alfred Chromium Extensions and Pages
-<!-- LTeX: enabled=true -->
 ![Download count](https://img.shields.io/github/downloads/chrisgrieser/alfred-chromium-extensions/total?label=Total%20Downloads&style=plastic)
 ![Version number](https://img.shields.io/github/v/release/chrisgrieser/alfred-chromium-extensions?label=Latest%20Release&style=plastic)
 
@@ -17,16 +15,14 @@ Search for installed browser extensions and internal pages via the keyword `ch`:
 - <kbd>⇧⏎</kbd> Open the local file path of the extension.
 
 ## Browser support
-Currently, only Chrome and Brave are supported. Adding support for more browsers
-is easy, as long as they are Chromium-based. Making a few additions to this
-[JSON
+Currently, only Chrome, Brave, and Arc are supported. Adding support for more
+browsers is easy, as long as they are Chromium-based. Making a few additions to
+this [JSON
 file](https://github.com/chrisgrieser/alfred-chromium-extensions/blob/main/scripts/browser-vars.json)
 is all that is needed, and mostly self-explanatory, PRs are welcome.
 
 ## Installation
 [➡️ Download the latest release.](https://github.com/chrisgrieser/alfred-chromium-extensions/releases/latest)
-
-The workflow auto-updates via Alfred's workflow-update mechanism.
 
 <!-- vale Google.FirstPerson = NO -->
 ## About the developer
