@@ -15,11 +15,14 @@ Search for installed browser extensions and internal pages via the keyword `ch`:
 - <kbd>⇧⏎</kbd> Open the local file path of the extension.
 
 ## Browser support
-Currently, only Chrome, Brave, and Arc are supported. Adding support for more
-browsers is easy, as long as they are Chromium-based. Making a few additions to
-this [JSON
+Currently, only Chrome, Brave, Arc, and Thorium are supported. Adding support
+for more browsers is easy, as long as they are Chromium-based.
+
+Making a few additions to [this JSON
 file](https://github.com/chrisgrieser/alfred-chromium-extensions/blob/main/scripts/browser-vars.json)
-is all that is needed, and mostly self-explanatory, PRs are welcome.
+and adding the browser name to [this
+list](https://github.com/chrisgrieser/alfred-chromium-extensions/blob/main/info.plist#L301-L304)
+is all that is needed, and mostly self-explanatory. PRs are welcome.
 
 ## Installation
 [➡️ Download the latest release.](https://github.com/chrisgrieser/alfred-chromium-extensions/releases/latest)
