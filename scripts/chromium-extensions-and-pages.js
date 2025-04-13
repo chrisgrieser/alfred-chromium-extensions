@@ -22,8 +22,6 @@ const fileExists = (/** @type {string} */ filePath) => Application("Finder").exi
 
 //──────────────────────────────────────────────────────────────────────────────
 
-//──────────────────────────────────────────────────────────────────────────────
-
 // biome-ignore lint/correctness/noUnusedVariables: Alfred run
 function run() {
 	const browser = $.getenv("browser");
@@ -59,7 +57,7 @@ function run() {
 
 	// EXTENSIONS
 	const extensions = app
-		.doShellScript(`find "${extensionPath}" -name "manifest.json" -depth 3`)
+		.doShellScript(`find "${extensionPath}" -name "manifest.json" -maxdepth 3 -mindepth 3`)
 		.split("\r")
 		// biome-ignore lint/complexity/noExcessiveCognitiveComplexity: okay here
 		.reduce((/** @type {AlfredItem[]} */ acc, manifestPath) => {
@@ -106,7 +104,7 @@ function run() {
 
 			// URLs
 			const optionsUrl = `chrome-extension://${id}/${optionsPath}`;
-			const webstoreUrl = `https://chrome.google.com/webstore/detail/${id}`;
+			const webstoreUrl = "https://chrome.google.com/webstore/detail/" + id;
 			const localFolder = extensionPath + "/" + id;
 
 			// emoji/icon
