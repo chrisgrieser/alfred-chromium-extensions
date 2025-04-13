@@ -81,14 +81,16 @@ function run() {
 			// determine name (SIC can be in one of these many locations)
 			let name = manifest.name;
 			if (name.startsWith("__MSG_") && manifest.short_name) name = manifest.short_name;
-			if (name.startsWith("__MSG_")) {
-				const msg = JSON.parse(readFile(root + "_locales/en/messages.json"));
+			const msgsFile = root + "_locales/en/messages.json";
+			if (name.startsWith("__MSG_") && fileExists(msgsFile)) {
+				const msg = JSON.parse(readFile(msgsFile));
 				name =
 					msg.extensionName?.message ||
 					msg.name?.message ||
 					msg.extName?.message ||
 					msg.appName?.message ||
-					"[name not found]";
+					manifest.short_name ||
+					manifest.name;
 			}
 
 			// determine options path
@@ -96,6 +98,7 @@ function run() {
 
 			// INFO EXCEPTIONS
 			if (name === "Stylus") optionsPath = "manage.html";
+			if (name === "Redirector") optionsPath = "redirector.html";
 			if (id === "bbojmeobdaicehcopocnfhaagefleiae") name = "OptiSearch";
 			const anchor = specialAnchors[name] || "";
 
