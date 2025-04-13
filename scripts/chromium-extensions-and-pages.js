@@ -93,8 +93,13 @@ function run() {
 					manifest.name;
 			}
 
-			// determine options path
-			let optionsPath = manifest.options_ui?.page || manifest.options_page || "";
+			// determine options or popup path
+			let optionsPath =
+				manifest.options_ui?.page ||
+				manifest.options_page ||
+				manifest.browser_action?.default_popup ||
+				manifest.action?.default_popup ||
+				"";
 
 			// INFO EXCEPTIONS
 			if (name === "Stylus") optionsPath = "manage.html";
