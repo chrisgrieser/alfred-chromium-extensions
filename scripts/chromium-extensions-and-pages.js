@@ -43,10 +43,7 @@ function run() {
 	}
 
 	// SETTINGS
-	const settings = [
-		...data.allChromiumBrowserSettings,
-		...data.browserSpecificSettings[browser],
-	];
+	const settings = [...data.allChromiumBrowserSettings, ...data.browserSpecificSettings[browser]];
 	const iconPath = data.appIcon[browser];
 	for (const page of settings) {
 		page.uid = page.arg;
@@ -110,7 +107,9 @@ function run() {
 
 			// emoji/icon
 			const emoji = optionsPath ? "" : " 🚫"; // indicate no options available
-			const icon = ["128", "64", "48", "32", "16"].map(size => manifest.icons[size]).find(Boolean);
+			const icon = ["128", "64", "48", "32", "16"]
+				.map((size) => manifest.icons[size])
+				.find(Boolean);
 			const iconPath = root + icon;
 
 			/** @type {AlfredItem} */
